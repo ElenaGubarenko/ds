@@ -8,6 +8,26 @@ letter-spacing: 0.06em;
 color: 
 */
 
+:root {
+  --DARKRED: #8b0000; /*лого, заголовки, кнопки, ховер ссылки*/
+  --SALMON: #fa8072;
+  --LIGHTSALMON: #ffa07a; /*подзаголовки*/
+  --RED: #ff0000;
+  --BLACK: #000000;
+  --MOCCASIN: #ffe4b5;
+
+  --GAINSBORO: #dcdcdc; /*фон*/
+  --CORAL: #ff7f50;
+  --TOMATO: #ff6347;
+  --ORANGERED: #ff4500;
+  --DARKORANGE: #ff8c00;
+  --ORANGE: #ffa500;
+
+  --WHITE: #ffffff; /*текст*/
+  --DARKGRAY: #a9a9a9; /*текст*/
+  --DIMGRAY: #696969;
+}
+
 body {
   font-family: "Roboto";
   font-weight: 400;
@@ -21,4 +41,32 @@ body {
 
 .link {
   text-decoration: none;
+  color: var(--DARKRED);
+}
+
+.nav-link {
+  color: var(--BLACK);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--WHITE);
+  background-color: var(--SALMON);
+}
+
+.hero-button {
+  text-transform: uppercase;
+  background-color: var(--DARKRED);
+  color: var(--WHITE);
+}
+
+.logo {
+  font-family: "Cormorant + Infant";
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--BLACK);
+}
+
+.logo-first {
+  color: var(--SALMON);
 }
