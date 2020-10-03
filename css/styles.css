@@ -6,6 +6,11 @@ font-size: 18px;
 line-height: 36px;
 letter-spacing: 0.06em;
 color: 
+
+hero: 44
+заголовки: 36
+подзаголовки: 30
+текст: 14
 */
 
 :root {
@@ -15,6 +20,7 @@ color:
   --RED: #ff0000;
   --BLACK: #000000;
   --MOCCASIN: #ffe4b5;
+  --bacground-workers: #f5f4fa;
 
   --GAINSBORO: #dcdcdc; /*фон*/
   --CORAL: #ff7f50;
@@ -31,8 +37,17 @@ color:
 body {
   font-family: "Roboto";
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 24px;
+
   letter-spacing: 0.03em;
+}
+
+.container {
+  width: 1700px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .list {
@@ -41,32 +56,259 @@ body {
 
 .link {
   text-decoration: none;
-  color: var(--DARKRED);
+  color: var(--SALMON);
+}
+
+.header {
+  border-bottom: solid 1px var(--DIMGRAY);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.nav-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .nav-link {
+  padding: 35px 0;
   color: var(--BLACK);
+  font-size: 24px;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  color: var(--WHITE);
-  background-color: var(--SALMON);
-}
-
-.hero-button {
-  text-transform: uppercase;
-  background-color: var(--DARKRED);
-  color: var(--WHITE);
+  color: var(--SALMON);
 }
 
 .logo {
-  font-family: "Cormorant + Infant";
+  margin-right: auto;
+  padding: 0px;
+  /*margin-top: 20px;*/
+  display: block;
+  font-family: "Roboto";
   font-weight: 700;
-  font-size: 26px;
+  font-size: 30px;
   color: var(--BLACK);
+  line-height: 0.7;
+}
+
+.bottom-logo {
+  font-weight: 700;
+  font-size: 15px;
 }
 
 .logo-first {
   color: var(--SALMON);
+}
+
+/*.logo:hover,
+.logo:focus {
+  color: var(--SALMON);
+}
+
+.logo-first:hover,
+.logo-first:focus {
+  color: var(--BLACK);
+}*/
+
+.hero {
+  padding: 150px 0 50px;
+
+  text-align: center;
+}
+
+.hero-title {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 0;
+  font-size: 44px;
+}
+
+.filip {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-text {
+  text-align: left;
+  margin: 0;
+  font-size: 18px;
+  /*line-height: ;*/
+}
+
+.button {
+  border: 1px solid var(--SALMON);
+  border-radius: 6px;
+  padding: 5px 20px;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--SALMON);
+  background-color: var(--WHITE);
+}
+
+.hero-button {
+  text-align: center;
+  margin: 0;
+  min-width: 100px;
+  text-transform: uppercase;
+  background-color: var(--SALMON);
+  color: var(--WHITE);
+}
+
+.our-program {
+  padding: 50px 0;
+}
+
+.program-title {
+  text-align: center;
+  margin: 0 0 50px;
+}
+
+.garden-program {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.program-list {
+  padding: 20px;
+  /*background-color: salmon;*/
+  width: 250px;
+}
+
+.program-list:not(:last-child) {
+  margin-right: 20px;
+}
+
+.program-mission-vision {
+  margin: 0 0 10px;
+}
+
+.program-text {
+  margin: 0 0 10px;
+}
+
+.program-link:hover,
+.program-link:focus {
+  border: 1px solid var(--SALMON);
+  border-radius: 6px;
+  padding: 5px 20px;
+}
+
+/*.program-link {
+  display: block;
+  text-align: center;
+}*/
+
+.workers {
+  padding: 50px 0;
+  background-color: var(--bacground-workers);
+  margin: 0;
+}
+
+.workers-items {
+  width: 700px;
+}
+
+.workers-items:not(:last-child) {
+  margin: 0 20px 0 0;
+}
+
+.workers-main-title {
+  text-align: center;
+  margin: 0 0 50px;
+}
+
+.workers-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.workers-title {
+  margin: 0 0 10px;
+}
+
+.workers-text {
+  margin: 0 0 10px;
+}
+
+.workers-link:focus,
+.workers-link:hover {
+  border: 1px solid var(--SALMON);
+  border-radius: 6px;
+  padding: 5px 20px;
+}
+
+.information {
+  padding: 50px 0;
+}
+
+.info-main-title {
+  text-align: center;
+  margin: 0 0 50px;
+}
+
+.info-list {
+  display: flex;
+  justify-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.info-items:not(:last-child) {
+  margin: 0 20px 0 0;
+  border-right: 3px solid var(--SALMON);
+}
+
+.info-title {
+  margin: 0 0 10px;
+}
+
+.info-text {
+  margin: 0 0 10px;
+}
+
+.be-kind {
+  padding: 50px 0;
+}
+
+.kind-title {
+  text-align: center;
+  margin: 0 0 50px;
+}
+
+.kind-text {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  text-align: left;
+}
+
+.footer {
+  padding: 80px 0;
+  background-color: var(--SALMON);
+}
+
+.logo-footer {
+  color: var(--WHITE);
+}
+
+.logo-first-footer {
+  color: var(--BLACK);
 }
